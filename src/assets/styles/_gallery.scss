@@ -1,0 +1,24 @@
+.gallery {
+  display: grid;
+  gap: 2vw;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 4em;
+  margin-bottom: 0em;
+  width: 100%;
+
+  .gallery__item {
+    position: relative;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .gallery__link {
+    width: 100%;
+  }
+
+  .gallery__img {
+    display: block;
+    max-width: 100%;
+    height: 200px
+  }
+}

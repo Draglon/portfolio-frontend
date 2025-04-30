@@ -1,0 +1,48 @@
+.header {
+  background-color: var(--header-bg-color);
+  border-bottom: 1px solid white;
+  padding: 30px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  &__wrapper {
+    padding: 0 15px;
+  }
+
+  &__title {
+    color: var(--text-color) !important;
+    font-family: "Advent Pro", sans-serif;
+    font-size: 4em !important;
+    font-weight: lighter !important;
+    line-height: 1.2em !important;
+    letter-spacing: 0.05em;
+    margin-top: 0;
+    text-align: center;
+    text-transform: capitalize;
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  &__link {
+    color: var(--link-color);
+    font-size: 1.6em !important;
+    letter-spacing: 0.05em !important;
+    font-weight: lighter !important;
+    font-family: "Advent Pro", sans-serif;
+    text-decoration: none;
+    margin: 0 15px;
+    &.active {
+      color: var(--link-color-active);
+      cursor: default;
+    }
+  }
+}
+
+.locale-switcher {
+  width: 150px;
+  height: 30px;
+}
