@@ -1,0 +1,28 @@
+.section {
+  .section__wrapper {
+    padding: 0 15px;
+  }
+
+  .section__title {
+    color: var(--text-color) !important;
+    font-family: "Advent Pro", sans-serif;
+    font-weight: bold !important;
+    letter-spacing: 0.05em;
+    margin-top: 0;
+    margin-bottom: 0.7em;
+    text-align: center;
+  }
+
+  .section__item {
+    margin-bottom: 30px;
+  }
+
+  .section__subtitle {
+    color: var(--text-color) !important;
+    font-family: "Advent Pro", sans-serif;
+    font-weight: lighter !important;
+    letter-spacing: 0.05em;
+    margin: 0;
+    text-align: center;
+  }
+}

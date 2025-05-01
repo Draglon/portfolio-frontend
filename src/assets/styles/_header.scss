@@ -13,13 +13,28 @@
   &__title {
     color: var(--text-color) !important;
     font-family: "Advent Pro", sans-serif;
-    font-size: 4em !important;
+    font-size: 48px !important;
     font-weight: lighter !important;
-    line-height: 1.2em !important;
-    letter-spacing: 0.05em;
-    margin-top: 0;
+    letter-spacing: 0.1em;
+    margin: 0 !important;
     text-align: center;
-    text-transform: capitalize;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    color: var(--text-color) !important;
+    font-family: Roboto, sans-serif;
+    font-size: 24px !important;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    margin: 0 !important;
+    text-align: center;
+    text-transform: uppercase;
+
+    span {
+      border-top: 1px solid var(--text-color);
+      display: inline-block;
+    }
   }
 }
 
@@ -29,8 +44,8 @@
   margin: 0 auto;
   &__link {
     color: var(--link-color);
-    font-size: 1.6em !important;
-    letter-spacing: 0.05em !important;
+    font-size: 24px !important;
+    letter-spacing: 0.1em !important;
     font-weight: lighter !important;
     font-family: "Advent Pro", sans-serif;
     text-decoration: none;

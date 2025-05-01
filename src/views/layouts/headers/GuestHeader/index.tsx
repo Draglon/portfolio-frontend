@@ -12,7 +12,12 @@ const GuestHeader = () => {
   return (
     <header className="header">
       <div className="header__wrapper">
-        <Title className="header__title">{t("fullname")}</Title>
+        <div className="mb-16">
+          <Title className="header__title" level={1}>{t("fullname")}</Title>
+          <Title className="header__subtitle" level={3}>
+            <span>{t("position")}</span>
+          </Title>
+        </div>
         <Navigation />
         {/* <LocalSwitcherSelect />
         <ThemeSwitcher /> */}
