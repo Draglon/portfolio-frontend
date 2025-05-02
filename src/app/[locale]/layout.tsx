@@ -1,4 +1,4 @@
-import clsx from "clsx";
+import localFont from "next/font/local";
 import { Roboto, Advent_Pro } from "next/font/google";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
@@ -9,6 +9,16 @@ import StoreProvider from "@/store/StoreProvider";
 import "@/app/styles.scss";
 
 import { Providers } from "./providers";
+
+const icomoon = localFont({
+  src: [
+    {
+      path: "../fonts/icomoon/tech/icomoon.woff",
+      weight: "400",
+      style: "normal",
+    },
+  ],
+});
 
 const roboto = Roboto({
   weight: ["300", "400", "500", "700"],
@@ -52,7 +62,7 @@ export default async function RootLayout({ children, params }: Props) {
     <StoreProvider>
       <html
         lang={locale}
-        className={clsx(roboto.className, adventPro.className)}
+        className={`${roboto.className} ${adventPro.className} ${icomoon.className}`}
         suppressHydrationWarning
       >
         <body>

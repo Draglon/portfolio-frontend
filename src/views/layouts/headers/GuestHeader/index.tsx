@@ -2,7 +2,7 @@
 import { useTranslations } from "next-intl";
 
 import { Title } from "@/views/shared/antd/Typography";
-import Navigation from "@/views/shared/Navigation";
+// import Navigation from "@/views/shared/Navigation";
 // import ThemeSwitcher from "@/views/shared/ThemeSwitcher";
 // import LocalSwitcherSelect from "@/views/shared/LocalSwitcherSelect";
 
@@ -18,9 +18,9 @@ const GuestHeader = () => {
             <span>{t("position")}</span>
           </Title>
         </div>
-        <Navigation />
-        {/* <LocalSwitcherSelect />
-        <ThemeSwitcher /> */}
+        {/* <Navigation /> */}
+        {/* <LocalSwitcherSelect /> */}
+        {/* <ThemeSwitcher /> */}
       </div>
     </header>
   );

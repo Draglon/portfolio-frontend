@@ -9,6 +9,8 @@ import Gallery from "@/views/shared/Gallery";
 import AirRelocateSRC from "@/assets/image/portfolio/AirRelocate.png";
 import RubyGarageSRC from "@/assets/image/portfolio/RubyGarage.png";
 import ExpertBoxSRC from "@/assets/image/portfolio/ExpertBox.png";
+import ClinixSRC from "@/assets/image/portfolio/clinix.png";
+import TrustBooksSRC from "@/assets/image/portfolio/trustbooks.png";
 
 const Home = () => {
   const t = useTranslations("Home");
@@ -25,21 +27,66 @@ const Home = () => {
                   src: AirRelocateSRC,
                   alt: "Air Relocate",
                   title: t("portfolio.markup.airRelocate.title"),
-                  icons: ["html", "tailwindcss", "react", "next_15"]
+                  icons: [
+                    { icon: "HTML5", parts: 4 },
+                    { icon: "CSS3", parts: 6 },
+                    { icon: "Tailwind-CSS", parts: null },
+                    { icon: "React", parts: null },
+                    { icon: "Nextjs", parts: 2 },
+                  ],
                 },
                 {
                   href: "https://rubygarage.org/",
                   src: RubyGarageSRC,
-                  alt: "RubyGarage",
+                  alt: "Ruby Garage",
                   title: t("portfolio.markup.rubyGarage.title"),
-                  icons: ["html", "scss", "jquery"]
+                  icons: [
+                    { icon: "HTML5", parts: 4 },
+                    { icon: "Sass", parts: null },
+                    { icon: "jQuery", parts: null },
+                  ]
                 },
                 {
                   href: "https://expertbox.io/",
                   src: ExpertBoxSRC,
-                  alt: "ExpertBox",
+                  alt: "Expert Box",
                   title: t("portfolio.markup.expertBox.title"),
-                  icons: ["html", "scss", "jquery"]
+                  icons: [
+                    { icon: "HTML5", parts: 4 },
+                    { icon: "Sass", parts: null },
+                    { icon: "jQuery", parts: null },
+                  ]
+                },
+                {
+                  href: "https://trustbooks.com/",
+                  src: TrustBooksSRC,
+                  alt: "Trust Books",
+                  title: t("portfolio.markup.trustbooks.title"),
+                  icons: [
+                    { icon: "HTML5", parts: 4 },
+                    { icon: "Sass", parts: null },
+                    { icon: "React", parts: null },
+                  ]
+                },
+              ]}
+            />
+          </SectionItem>
+
+          <SectionItem title={t("portfolio.react.title")}>
+            <Gallery items={
+              [
+                {
+                  href: "https://clinix.com.py/",
+                  src: ClinixSRC,
+                  alt: "clinix.com.py",
+                  title: t("portfolio.react.clinix.title"),
+                  icons: [
+                    { icon: "HTML5", parts: 4 },
+                    { icon: "Sass", parts: null },
+                    { icon: "React", parts: null },
+                    { icon: "Nextjs", parts: 2 },
+                    { icon: "Jest", parts: null },
+                  ]
                 },
               ]}
             />
@@ -53,14 +100,34 @@ const Home = () => {
                   src: AirRelocateSRC,
                   alt: "CV generation",
                   title: t("portfolio.fullStack.cvGeneration.title"),
-                  icons: ["html", "scss", "react", "next_15", "mongodb", "mongoose", "express", "node"]
+                  icons: [
+                    { icon: "HTML5", parts: 4 },
+                    { icon: "Sass", parts: null },
+                    { icon: "React", parts: null },
+                    { icon: "Nextjs", parts: 2 },
+                    { icon: "Jest", parts: null },
+                    { icon: "Nodejs", parts: null },
+                    { icon: "MongoDB", parts: 16 },
+                    { icon: "Mongoosejs", parts: null },
+                    { icon: "Express", parts: null },
+                  ]
                 },
                 {
                   href: "https://mern-fe-blog.vercel.app/",
                   src: AirRelocateSRC,
                   alt: "Blog",
                   title: t("portfolio.fullStack.blog.title"),
-                  icons: ["html", "scss", "react", "mongodb", "mongoose", "express", "node"]
+                  icons: [
+                    { icon: "HTML5", parts: 4 },
+                    { icon: "Sass", parts: null },
+                    { icon: "React", parts: null },
+                    { icon: "Nextjs", parts: 2 },
+                    { icon: "Jest", parts: null },
+                    { icon: "Nodejs", parts: null },
+                    { icon: "MongoDB", parts: 16 },
+                    { icon: "Mongoosejs", parts: null },
+                    { icon: "Express", parts: null },
+                  ]
                 },
               ]}
             />

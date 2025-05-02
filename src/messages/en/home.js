@@ -21,6 +21,15 @@ const home = {
         "expertBox": {
           "title": "Markup ExpertBox",
         },
+        "trustbooks": {
+          "title": "Markup TrustBooks",
+        },
+      },
+      "react": {
+        "title": "React development",
+        "сlinix": {
+          "title": "clinix.com.py",
+        },
       },
       "fullStack": {
         "title": "Full stack development (MERN)",

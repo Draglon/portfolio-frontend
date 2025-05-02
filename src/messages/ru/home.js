@@ -21,6 +21,15 @@ const home = {
         "expertBox": {
           "title": "Разметка ExpertBox",
         },
+        "trustbooks": {
+          "title": "Разметка TrustBooks",
+        },
+      },
+      "react": {
+        "title": "Разработка на react",
+        "сlinix": {
+          "title": "clinix.com.py",
+        },
       },
       "fullStack": {
         "title": "Разработка полного стека (MERN)",

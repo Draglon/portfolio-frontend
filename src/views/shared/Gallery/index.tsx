@@ -3,8 +3,21 @@ import Image from "next/image";
 
 import { Text } from "@/views/shared/antd/Typography";
 
+type IconProps = {
+  icon: string;
+  parts?: number | null;
+}
+
+type ItemProps = {
+  href: string;
+  src: any;
+  alt: string;
+  title: string;
+  icons: IconProps[];
+};
+
 type SectionProps = {
-  items: any[];
+  items: ItemProps[];
 };
 
 const Gallery = ({ items }: SectionProps) => {
@@ -17,8 +30,10 @@ const Gallery = ({ items }: SectionProps) => {
             <Text className="gallery__description">
               {item.title}
               <span className="gallery__stack">
-                {item.icons.map((icon: string, iconIndex: number) => (
-                  <i key={iconIndex} className={`icon icon-${icon}`} />
+                {item.icons.map(({ icon, parts }, iconIndex: number) => (
+                  <i className={`icon icon-${icon}`} key={iconIndex}>
+                    {[...Array(parts)].map((_, i) => <span key={i+1} className={`path${i+1}`} />)}
+                  </i>
                 ))}
               </span>
             </Text>
