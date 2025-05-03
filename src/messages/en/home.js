@@ -43,6 +43,9 @@ const home = {
     },
     "aboutMe": {
       "title": "About me",
+      "description": "I have been working as a web developer for over 10 years. Frontend developer for the last 6 years. I have experience as markup and react developer. I learn quickly and adapt to new conditions. I expect interesting projects, the opportunity for professional growth and development.",
+      "frontend": "Frontend development",
+      "backend": "Backend development",
     },
     "contacts": {
       "title": "Contacts",

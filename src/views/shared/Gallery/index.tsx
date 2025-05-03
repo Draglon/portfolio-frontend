@@ -28,7 +28,7 @@ const Gallery = ({ items }: SectionProps) => {
           <a href={item.href} target="_blank" className="gallery__link">
             <Image src={item.src} className="gallery__img" height="200" alt={item.alt} />
             <Text className="gallery__description">
-              {item.title}
+              <span className="gallery__text">{item.title}</span>
               <span className="gallery__stack">
                 {item.icons.map(({ icon, parts }, iconIndex: number) => (
                   <i className={`icon icon-${icon}`} key={iconIndex}>

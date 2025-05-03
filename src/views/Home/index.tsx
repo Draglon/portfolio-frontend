@@ -1,6 +1,7 @@
 "use client";
 import { useTranslations } from "next-intl";
 
+import { Text, Title } from "@/views/shared/antd/Typography";
 import GuestLayout from "@/views/layouts/GuestLayout";
 import Section from "@/views/shared/Section";
 import SectionItem from "@/views/shared/SectionItem";
@@ -136,7 +137,17 @@ const Home = () => {
 
         {/* About Me */}
         <Section title={t("aboutMe.title")}>
-          <div>About me</div>
+          <div className="">
+            <Text className="">
+              {t("aboutMe.description")}
+            </Text>
+
+            <div>
+              <Title className="">
+                {t("aboutMe.")}
+              </Title>
+            </div>
+          </div>
         </Section>
 
         {/* Contacts */}

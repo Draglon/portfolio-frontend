@@ -1,7 +1,13 @@
 :root {
   // colors
   --white: #fff;
+  --white_50: rgba(255,255,255,.5);
+  --white_75: rgba(255,255,255,.75);
   --black: #000;
+  --black_0: rgba(0,0,0,0);
+  --black_50: rgba(0,0,0,.5);
+  --black_75: rgba(0,0,0,.75);
+  --black_90: rgba(0,0,0,.9);
   --black-light: #191A20;
   --grey: #666;
   --grey-dark: #333;
@@ -34,32 +40,3 @@
   // --button-primary-bg-color: var(--primary-color);
   // --button-primary-bg-color-hover: var(--primary-color-hover);
 }
-
-// ----------- Template ------------
-$template-width: 21cm; // 797px;
-$template-height: auto; // 29.7cm; // 1127px;
-// Template - sidebar
-$template-sidebar-bg-blue: var(--blue);
-$template-sidebar-title-color: var(--white);
-$template-sidebar-text-color: var(--white);
-$template-sidebar-border-color: var(--white);
-$template-sidebar-padding: 5mm;
-$template-sidebar-margin: 5mm;
-$template-sidebar-width: 60mm;
-// Template - container
-$template-container-bg: var(--white);
-$template-container-color: var(--grey);
-$template-container-header-color: var(--grey-dark);
-$template-container-border-color: var(--grey-light);
-$template-container-period-color: var(--grey-light);
-$template-container-hint-color: var(--grey-light);
-$template-container-padding: 10mm;
-$template-container-margin: 5mm;
-$template-container-width: calc(100% - $template-sidebar-width);
-
-// Personal - photo
-$personal-photo-width: 50mm;
-$personal-photo-height: 50mm;
-
-// Personal - info
-$personal-info-border-color: var(--grey-light);
