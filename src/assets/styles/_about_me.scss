@@ -1,0 +1,46 @@
+.about-me {
+  .about-me__wrapper {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+
+  .about-me__description {
+    margin-bottom: 30px;
+  }
+  
+  .about-me__text {
+    font-family: "Advent Pro", sans-serif;
+    font-size: 24px;
+    letter-spacing: 0.1em !important;
+    color: var(--text-color);
+    text-align: center;
+  }
+
+  .about-me__section {
+    margin-bottom: 30px;
+  }
+
+  .about-me__title {
+    color: var(--text-color);
+    font-family: "Advent Pro", sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.1em !important;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .about-me__tech-stack {
+    background-color: rgba(39, 39, 42, 1);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+
+    .icon {
+      font-size: 32px;
+    }
+  }
+}

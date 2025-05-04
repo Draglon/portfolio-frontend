@@ -6,6 +6,7 @@ import GuestLayout from "@/views/layouts/GuestLayout";
 import Section from "@/views/shared/Section";
 import SectionItem from "@/views/shared/SectionItem";
 import Gallery from "@/views/shared/Gallery";
+import Icons from "@/views/shared/Icons";
 
 import AirRelocateSRC from "@/assets/image/portfolio/AirRelocate.png";
 import RubyGarageSRC from "@/assets/image/portfolio/RubyGarage.png";
@@ -137,23 +138,65 @@ const Home = () => {
 
         {/* About Me */}
         <Section title={t("aboutMe.title")}>
-          <div className="">
-            <Text className="">
-              {t("aboutMe.description")}
-            </Text>
+          <div className="about-me">
+            <div className="about-me__wrapper">
+              <div className="about-me__description">
+                <Text className="about-me__text">
+                  {t("aboutMe.description")}
+                </Text>
+              </div>
 
-            <div>
-              <Title className="">
-                {t("aboutMe.")}
-              </Title>
+              <section className="about-me__section">
+                <Title className="about-me__title" level={3}>
+                  {t("aboutMe.frontend")}
+                </Title>
+                <div className="about-me__tech-stack">
+                  <Icons icons={[
+                      { icon: "HTML5", parts: 4 },
+                      { icon: "CSS3", parts: 6 },
+                      { icon: "Sass", parts: null },
+                      { icon: "Less", parts: null },
+                      { icon: "Tailwind-CSS", parts: null },
+                      { icon: "JavaScript", parts: 2 },
+                      { icon: "TypeScript", parts: 2 },
+                      { icon: "jQuery", parts: null },
+                      { icon: "React", parts: null },
+                      { icon: "Redux", parts: null },
+                      { icon: "Nextjs", parts: 2 },
+                      { icon: "Jest", parts: null },
+                      { icon: "Ant-Design", parts: null },
+                      { icon: "Material-UI", parts: 4 },
+                    ]}/>
+                </div>
+              </section>
+
+              <section className="about-me__section">
+                <Title className="about-me__title" level={3}>
+                  {t("aboutMe.backend")}
+                </Title>
+                <div className="about-me__tech-stack">
+                  <Icons icons={[
+                    { icon: "Nodejs", parts: null },
+                    { icon: "Express", parts: null },
+                    { icon: "MongoDB", parts: 16 },
+                    { icon: "Nodemon", parts: 2 },
+                    { icon: "Mongoose", parts: null },
+                    { icon: "Docker", parts: 16 },
+                  ]}/>
+                </div>
+              </section>
             </div>
           </div>
         </Section>
 
         {/* Contacts */}
-        <Section title={t("contacts.title")}>
-          <div>Contacts</div>
-        </Section>
+        {/* <Section title={t("contacts.title")}>
+          <ul>
+            <li>Phone: </li>
+            <li>Email: </li>
+            <li>LinkedIn: </li>
+          </ul>
+        </Section> */}
       </div>
     </GuestLayout>
   );

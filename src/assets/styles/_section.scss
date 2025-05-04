@@ -1,9 +1,11 @@
 .section {
-  .section__wrapper {
+  margin-bottom: 60px;
+
+  &__wrapper {
     padding: 0 15px;
   }
 
-  .section__title {
+  &__title {
     color: var(--text-color) !important;
     font-family: "Advent Pro", sans-serif;
     font-weight: bold !important;
@@ -13,11 +15,11 @@
     text-align: center;
   }
 
-  .section__item {
+  &__item {
     margin-bottom: 30px;
   }
 
-  .section__subtitle {
+  &__subtitle {
     color: var(--text-color) !important;
     font-family: "Advent Pro", sans-serif;
     font-weight: lighter !important;

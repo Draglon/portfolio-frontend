@@ -27,7 +27,7 @@ const home = {
       },
       "react": {
         "title": "Разработка на react",
-        "сlinix": {
+        "clinix": {
           "title": "clinix.com.py",
         },
       },
